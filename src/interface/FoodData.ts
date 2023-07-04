@@ -1,5 +1,5 @@
 interface FoodData {
-    id: number,
+    id?: number,
     title: string,
     image: string,
     price: number,
@@ -7,4 +7,4 @@ interface FoodData {
 
 export type {
     FoodData
-} 
+};
