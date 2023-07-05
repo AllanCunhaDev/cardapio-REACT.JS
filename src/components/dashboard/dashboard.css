@@ -9,6 +9,12 @@
 .card-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    @media(max-width: 768px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 430px){
+        grid-template-columns: 1fr;
+    }
     gap: 1rem;
 }
 
