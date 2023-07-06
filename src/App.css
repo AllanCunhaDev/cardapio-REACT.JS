@@ -1,14 +1,36 @@
 .btn-novo{
     background-color: red;
+    border: none;
+    border-radius: 8px;
     color: white;
     font-weight: bold;
     position: fixed;
     bottom: 1rem;
     right: 1.5rem;
     transition: all 0.1s linear 0.1s;
+
+    width: 100px;
+    height: 24px;
 }
 
 .btn-novo:hover{
     box-shadow: rgba(100,100,111,0.2) 0px 7px 7px 0px;
     transform: scale(1.1);
+}
+
+.btn-close{
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 1rem;
+    left: 1.5rem;
+    transition: all 0.1s linear 0.1s;
+
+    width: 100px;
+    height: 24px;
+
+    
 }

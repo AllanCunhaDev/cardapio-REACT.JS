@@ -14,7 +14,9 @@ function App() {
     <>
       <Dashboard />
       {isModalOpen && <CreateModal closeModal={handleOpenModal} />}
-      <button className="btn-novo" onClick={handleOpenModal}>Novo</button>
+      <button className="btn-novo" onClick={handleOpenModal}>
+        Novo
+      </button>
     </>
   );
 }

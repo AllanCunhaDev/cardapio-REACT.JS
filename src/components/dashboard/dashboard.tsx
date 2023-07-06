@@ -8,7 +8,7 @@ export const Dashboard = () => {
 
   return (
     <div className="container">
-      <h1>Cardápio</h1>
+      <h1>Cardápio RJ</h1>
       <div className="card-grid">
         {data?.map((foodData) => (
           <Card

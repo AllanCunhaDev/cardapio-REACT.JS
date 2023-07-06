@@ -31,6 +31,7 @@ const CreateModal = ({closeModal}: ModalProps) => {
   const [image, setImage] = useState("");
   const { mutate, isSuccess, isLoading } = useFoodDataMutate();
 
+
   const submit = () => {
     const foodData: FoodData = {
         title,
@@ -45,14 +46,15 @@ const CreateModal = ({closeModal}: ModalProps) => {
     closeModal();
   },[isSuccess])
 
+ 
   return (
     <div className="modal-overLay">
       <div className="modal-body">
-        <h2>Cadastre um novo produto.</h2>
+        <h2>Cadastre um novo Produto.</h2>
         <form className="input-container">
-          <Input label="Nome do Produto" value={title} updateValue={setTitle} />
-          <Input label="preço" value={price} updateValue={setPrice}/>
-          <Input label="Imagem" value={image} updateValue={setImage} />
+          <Input label="Nome do produto" value={title} updateValue={setTitle} />
+          <Input label="Preço" value={price} updateValue={setPrice}/>
+          <Input label="Imagens" value={image} updateValue={setImage} />
         </form>
         <button onClick={submit}className="btn-post">
           {isLoading ? "Postando..." : "Postar"}
