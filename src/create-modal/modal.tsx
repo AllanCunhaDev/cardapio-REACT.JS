@@ -50,11 +50,11 @@ const CreateModal = ({closeModal}: ModalProps) => {
   return (
     <div className="modal-overLay">
       <div className="modal-body">
-        <h2>Cadastre um novo Produto.</h2>
+        <h2>Cadastre um novo produto.</h2>
         <form className="input-container">
-          <Input label="Nome do produto" value={title} updateValue={setTitle} />
-          <Input label="Preço" value={price} updateValue={setPrice}/>
-          <Input label="Imagens" value={image} updateValue={setImage} />
+          <Input label="Nome do produto." value={title} updateValue={setTitle} />
+          <Input label="Preço do produto." value={price} updateValue={setPrice}/>
+          <Input label="Imagens do produto." value={image} updateValue={setImage} />
         </form>
         <button onClick={submit}className="btn-post">
           {isLoading ? "Postando..." : "Postar"}

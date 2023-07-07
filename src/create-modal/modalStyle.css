@@ -18,7 +18,7 @@ z-index: 999;
     background-color: white;
     padding: 24px;
     width: clamp(30%, 90%, 50%);
-    height:clamp(30%, 90%, 65%);
+    height:clamp(30%, 80%, 100%);
     border-radius: 24px;
 
     display: flex;
@@ -26,20 +26,36 @@ z-index: 999;
     flex-direction: column;
     justify-content: space-between;
 
+    @media (max-width:2000px) {
+        width: clamp(30%, 50%, 30%);
+        height:clamp(30%, 50%, 100%);
+        padding: 20px;
+    }
+    @media (max-width:718px) {
+        width: clamp(30%, 80%, 70%);
+        height:clamp(30%, 80%, 100%);
+    }
 }
 
 .modal-overLay .modal-body h2{
     font-size: 36px;
-  
+    margin-top: 0;
+
+    @media (max-width:450px) {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+.modal-overLay .modal-body .input-container{
+    width: calc(100% - 24px);
+
 }
 
 .modal-overLay .modal-body .input-container{
     width: calc(100% - 24px);
 }
 
-.modal-overLay .modal-body .input-container{
-    width: calc(100% - 24px);
-}
 .modal-overLay .modal-body input{
     padding: 12px;
     border: 2px solid #c6c5c5c5;
@@ -49,6 +65,13 @@ z-index: 999;
     width: 100%;
 
     margin-bottom: 12px;
+
+    @media (max-width:450px) {
+    height: 10px;
+    }
+    @media (max-width:300px) {
+        height: 10px;
+        }
 }
 
 .modal-overLay .modal-body label{
@@ -61,7 +84,10 @@ z-index: 999;
 .modal-overLay .modal-body .btn-post{
     position: initial;
     width: 100%;
-    margin-top: 32px;
+    background-color: #3a44f8;
+    color: white;
+    font-weight: 600;
+
 }
 
 .modal-overLay .modal-body .btn-post:hover{
